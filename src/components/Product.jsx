@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from'./Card'
-import image1 from "../images/Handbag.jpg"
-import image2 from "../images/Pen.jpg"
-import image3 from "../images/Sweater.jpg"
-import image4 from "../images/flower.jpg"
+import image1 from "../images/image1.jpg"
+import image2 from "../images/image2.jpg"
+import image3 from "../images/image3.jpg"
+import image4 from "../images/image4.jpg"
 
 
 const Product = () => {

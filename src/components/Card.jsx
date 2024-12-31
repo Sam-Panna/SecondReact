@@ -5,7 +5,7 @@ const Card = ({ img, name, address, des }) => {
   return (
     <div className='h-[22rem] w-[20rem] border-2 border-black rounded-lg flex flex-col'>
 
-      <div className='h-[40%] w-full'>
+      <div className='h-[55%] w-full'>
         <img className='h-full w-full' src={img} alt="" />
       </div>
 
