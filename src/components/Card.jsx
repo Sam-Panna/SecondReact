@@ -3,9 +3,9 @@ import React from 'react'
 
 const Card = ({ img, name, address, des }) => {
   return (
-    <div className='h-[22rem] w-[20rem] border-2 border-black rounded-lg flex flex-col'>
+    <div className='h-fit w-[20rem] border-2 border-black rounded-lg flex flex-col'>
 
-      <div className='h-[55%] w-full'>
+      <div className='h-[12rem] w-full'>
         <img className='h-full w-full' src={img} alt="" />
       </div>
 
@@ -13,7 +13,7 @@ const Card = ({ img, name, address, des }) => {
       <div className='p-4 flex flex-col gap-2'>
         <h2 className='text-4xl font-bold'>{name}</h2>
         <h2 className='font-bold text-green-400'>Address: {address}</h2>
-        <p className='text-justify'>{des.slice(0, 130) + "..."}</p>
+        <p className='text-justify'>{des.slice(0, 100) + "..."}</p>
         <div className='flex justify-end w-full'>
           <button className="p-2 px-4 bg-green-400 rounded-md">More</button>
         </div>

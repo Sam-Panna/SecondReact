@@ -13,26 +13,26 @@ const Product = () => {
       image: image1,
       name: "Sampanna ",
       address: "Itahari",
-      description: "fghhhhhhhiooo oooooggggggggg gggggggggggg ggggggggggg ",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure est vel beatae enim tempore quae impedit in dolor? Accusamus beatae hic reiciendis ipsam laboriosam, sequi libero minus veritatis cumque. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi blanditiis excepturi quas qui. Excepturi mollitia recusandae ullam dolores beatae quo libero ratione maiores possimus eligendi cum, sit temporibus. Illo.",
 
     },
     {
       image: image2,
       name: "Ram",
       address: "Ktm",
-      description : "gggggjuvuu kkkkkkkk kkkkkkkuuuuu uuvvtdddddddddddddd",
+      description : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure est vel beatae enim tempore quae impedit in dolor? Accusamus beatae hic reiciendis ipsam laboriosam, sequi libero minus veritatis cumque. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi blanditiis excepturi quas qui. Excepturi mollitia recusandae ullam dolores beatae quo libero ratione maiores possimus eligendi cum, sit temporibus. Illo.",
     },
     {
       image:image3,
       name: "Sita",
       address: "Ktm",
-      description : "gggggkkkkkk kkkkkkkkk kkvvtddddddd dddddddddddd dddddddd",
+      description : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure est vel beatae enim tempore quae impedit in dolor? Accusamus beatae hic reiciendis ipsam laboriosam, sequi libero minus veritatis cumque. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi blanditiis excepturi quas qui. Excepturi mollitia recusandae ullam dolores beatae quo libero ratione maiores possimus eligendi cum, sit temporibus. Illo.",
     },
     {
       image: image4,
       name: "Hari",
       address: "Ktm",
-      description : "kkkkkkkkkkkkkk kkkkkkk kkddddddd dddddd ddddddddddd",
+      description : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure est vel beatae enim tempore quae impedit in dolor? Accusamus beatae hic reiciendis ipsam laboriosam, sequi libero minus veritatis cumque. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi blanditiis excepturi quas qui. Excepturi mollitia recusandae ullam dolores beatae quo libero ratione maiores possimus eligendi cum, sit temporibus. Illo.",
     },
   ]
   return (
