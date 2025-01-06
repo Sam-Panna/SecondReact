@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import Count from "./components/Count"
 import Content from "./components/Content"
 import Login from "./components/Login"
 // import Card from "./components/Card"
@@ -18,13 +19,20 @@ const App = () => {
 
   // }
 
-  const [text, setText] = useState('')
+  // const [text, setText] = useState('')
 
-  const handleChange = (event) => {
-    setText(event.target.value);
+  // const handleChange = (event) => {
+  //   setText(event.target.value);
 
-    console.log(text);
-  }
+  //   console.log(text);
+  // }
+
+  // const[seeMore, setSeeMore] = useState(false)
+
+  // const handleClick = () => {
+  //   setSeeMore(!seeMore);
+    
+  // }
 
 
 
@@ -36,9 +44,29 @@ const App = () => {
   // }
   // console.log(count);
 
+
+  //Use Effect
+
+  const[text, setText] = useState('');
+  console.log(text, "text");
+
+  useEffect(() => {
+    printLog();
+  },[text])
+
+  const printLog = () =>{
+   console.log("hi", 57);
+  }
+
+  const handleChange = (event) => {
+    setText(event.target.value);
+  }
+
+
   return (
 
     <>
+      <Count/>
 
 
       {/* <Product/> */}
@@ -59,6 +87,12 @@ const App = () => {
 
       </form>
 
+      
+        {/* SEE MORE */}
+        <div>
+          {/* <textarea name="" id="" > <span onClick={handleClick}>{seeMore ? 'seeLess': 'seeMore'}</span></textarea> */}
+          {/* <div>{"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minus nisi hic error ea odit distinctio libero cupiditate enim atque cum quia, voluptatum expedita repellat laboriosam? Suscipit ea reprehenderit accusantium?".slice(0, 100) + "..."} <span onClick={handleClick}>{seeMore ? 'seeLess': 'seeMore'}</span></div> */}
+        </div>
 
 
 
