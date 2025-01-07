@@ -5,6 +5,7 @@ import Login from "./components/Login"
 // import Card from "./components/Card"
 import Product from "./components/Product"
 import Table from "./components/Table"
+import Model from "./components/Model"
 
 const App = () => {
 
@@ -66,7 +67,8 @@ const App = () => {
   return (
 
     <>
-      <Count/>
+      {/* <Count/> */}
+      <Model/>
 
 
       {/* <Product/> */}

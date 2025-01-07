@@ -36,9 +36,9 @@ const Count = () => {
             <div className='h-[100vh] flex justify-center items-center'>
                
                 {
-                    count === 0 ? <></>  : <button onClick={handleSub}  className='bg-red-300 border-red-500'>-</button> 
+                    // count === 0 ? <></>  : <button onClick={handleSub}  className='bg-red-300 border-red-500'>-</button> 
                 
-                    // !(count === 0) && <button onClick={handleSub}  className='bg-red-300 border-red-500'>-</button>
+                    count !== 0 && <button onClick={handleSub}  className='bg-red-300 border-red-500'>-</button>
                 }
                     
                 <h1>{count}</h1>
