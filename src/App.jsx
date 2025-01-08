@@ -6,6 +6,14 @@ import Login from "./components/Login"
 import Product from "./components/Product"
 import Table from "./components/Table"
 import Model from "./components/Model"
+import Navbar from "./components/Navbar"
+import{Routes, Route} from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import AboutPage from "./pages/AboutPage"
+import ServicePage from "./pages/ServicePage"
+import ContactPage from "./pages/ContactPage"
+import LoginPage from "./pages/LoginPage"
+import SignPage from "./pages/SignPage"
 
 const App = () => {
 
@@ -48,27 +56,44 @@ const App = () => {
 
   //Use Effect
 
-  const[text, setText] = useState('');
-  console.log(text, "text");
+  // const[text, setText] = useState('');
+  // console.log(text, "text");
 
-  useEffect(() => {
-    printLog();
-  },[text])
+  // useEffect(() => {
+  //   printLog();
+  // },[text])
 
-  const printLog = () =>{
-   console.log("hi", 57);
-  }
+  // const printLog = () =>{
+  //  console.log("hi", 57);
+  // }
 
-  const handleChange = (event) => {
-    setText(event.target.value);
-  }
+  // const handleChange = (event) => {
+  //   setText(event.target.value);
+  // }
 
 
   return (
 
     <>
+
+
+    {/* Rounting */}
+
+    <Navbar/> 
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/about" element={<AboutPage/>}/>
+      <Route path="/service" element = {<ServicePage/>} />
+      <Route path="/contact" element = {<ContactPage/>} />
+      <Route path="/signup" element = {<SignPage/>} />
+      <Route path="/login" element = {<LoginPage/>} />
+
+    </Routes>
+
+
       {/* <Count/> */}
-      <Model/>
+      {/* <Model/> */}
+     
 
 
       {/* <Product/> */}
@@ -78,7 +103,7 @@ const App = () => {
       
       <button onClick={handleClick} className="p-2 px-4 bg-blue-500 rounded-md">{click ? "ON" : "OFF"}</button>
     </div> */}
-      <form>
+      {/* <form>
 
         <div className="h-[100vh] w-full flex items-center gap-4 justify-center flex-col ">
           <input type="text" onChange={handleChange}  className="border-2 border-black rounded-md" />
@@ -87,7 +112,7 @@ const App = () => {
 
         </div>
 
-      </form>
+      </form> */}
 
       
         {/* SEE MORE */}
