@@ -22,27 +22,27 @@ const Signup = () => {
             <p className='font-bold text-4xl text-slate-700'>Sign Up</p>
                       <div>< FaPenToSquare className='size-12 text-slate-800'/></div>
                       <div className='relative'>
-                      <span className='absolute left-0 top-1 text-slate-700'><FaRegUser/></span>
+                      <span className='absolute p-1 text-slate-700'><FaRegUser/></span>
                       <input type="text" placeholder='Full Name' className='px-6'  />
                       </div>
 
                       <div className='relative'>
-                      <span className='absolute left-0 top-1 text-slate-700'><MdOutlineMail /></span>
+                      <span className='absolute p-1 text-slate-700'><MdOutlineMail /></span>
                       <input type='email' placeholder='Email Address' className='px-6'/>
                       </div>
 
                       <div className='relative'>
-                      <span className='absolute left-0 top-1 text-slate-700'><BiWorld/></span>
+                      <span className='absolute p-1 text-slate-700'><BiWorld/></span>
                       <input type='text' placeholder='Country' className='px-6'/>
                       </div>
 
                       <div className='relative'>
-                      <span className='absolute left-0 top-1 text-slate-700'><FaPhoneAlt/></span>
+                      <span className='absolute p-1 text-slate-700'><FaPhoneAlt/></span>
                       <input type='number' placeholder='Phone' className='px-6'/>
                       </div>
 
                       <div className='relative'>
-                      <span className='absolute left-0 top-1 text-slate-700'><RiLockPasswordFill/></span>
+                      <span className='absolute p-1 text-slate-700'><RiLockPasswordFill/></span>
                       <input type='password' placeholder='Password' className='px-6'/>
                       </div>
 

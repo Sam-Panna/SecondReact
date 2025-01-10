@@ -2,6 +2,8 @@ import React from 'react'
 import { FaUserCircle } from "react-icons/fa"
 import { FaRegUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,6 +14,12 @@ const Login = () => {
   const handleCheckbox = (event) => {
     setIsChecked(event.target.checked);
   };
+
+  const[showpassword, setShowPassword] = useState(false);
+
+  const handletogglePassword = () =>{
+    setShowPassword(!showpassword);
+  };
   return (
     <>
       <div className='h-[100vh] w-full bg-slate-500 flex items-center justify-center'>
@@ -21,12 +29,18 @@ const Login = () => {
           <p className='font-bold text-4xl text-slate-700'>Login Form</p>
           <div><FaUserCircle className='size-16 text-slate-800'/></div>
           <div className='relative'>
-          <span className='absolute left-0 top-1 text-slate-700'><FaRegUser/></span>
+          <span className='absolute p-1 text-slate-700'><FaRegUser/></span>
           <input type="text" placeholder='UserName' className='px-6'  />
           </div>
-          <div className='relative'>
-          <span className='absolute left-0 top-1 text-slate-700'><RiLockPasswordFill/></span>
-          <input type='password' placeholder='Password' className='px-6'/>
+          <div className='relative flex items-center'>
+          <span className='absolute  p-1 text-slate-700'><RiLockPasswordFill/></span>
+          <input type={showpassword ? "text" : "password"} placeholder='Password' className='px-6'/>
+          
+
+          <button className='absolute right-0' onClick={handletogglePassword}>
+            {showpassword ?  <FaEye/> : <FaEyeSlash/>} </button>
+
+          
           </div>
           <div className='flex flex-row gap-9 text-sm text-slate-900'>
           <label className='flex items-center' >
@@ -52,7 +66,7 @@ const Login = () => {
     </>
 
 
-  )
+  );
 }
 
 export default Login
